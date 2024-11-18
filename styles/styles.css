@@ -15,13 +15,14 @@
   --background-color: white;
   --light-color: #f8f8f8;
   --dark-color: #505050;
-  --text-color: #131313;
+  --text-color: #363636;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
+  --text-and-media-background-color: #E8F2F1;
 
   /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --body-font-family: Futura PT, sans-serif;;
+  --heading-font-family: Futura PT, sans-serif;;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -37,7 +38,12 @@
   --heading-font-size-xs: 22px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 100px;
+
+  --teaser-image-aspect-ratio: 1 / 1;
+  --teaser-padding-value: 0px;
+  --teaser-primary-cta-border-color: #4297BA;
+  --teaser-secondary-cta-border-color: #FFDB00;
 }
 
 /* fallback fonts */
@@ -143,7 +149,7 @@ pre {
 }
 
 main > div {
-  margin: 40px 16px;
+  margin: 0px 16px;
 }
 
 input,
@@ -233,14 +239,83 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   padding: 0 24px;
+}
+
+main > .section > div.form-wrapper {
+  padding: 0;
+}
+
+
+main > .banner-section > div {
+  display: flex;
+  flex-direction: row;
 }
 
 main > .section:first-of-type {
   margin-top: 0;
 }
+
+main > .section.columns-container .default-content-wrapper {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+main > .section.columns-container  h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (width >= 768px) {
+
+  main > .section.columns-container  h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  main > div {
+    margin: 40px 16px;
+  }
+
+  main > .section > div.form-wrapper {
+    padding:  0 40px;
+  }
+}
+
+@media (width >= 1024px) {
+
+  main > .section.columns-container  h1 {
+    font-size: 44px;
+    line-height: 54px;
+  }
+
+  main > div {
+    margin: 40px 16px;
+  }
+
+  main > .section > div.form-wrapper {
+    padding:  0 24px;
+  }
+}
+
+main > .section.columns-container  p {
+  text-align: center;
+  color: rgb(9, 66, 115);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: .04em;
+  text-transform: none;
+}
+
 
 @media (width >= 900px) {
   main > .section > div {
