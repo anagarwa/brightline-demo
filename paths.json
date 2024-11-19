@@ -1,10 +1,10 @@
 {
   "mappings": [
-    "/content/brightline-demo/:/",
-    "/content/brightline-demo/configuration:/.helix/config.json",
-    "/content/brightline-demo/metadata:/metadata.json"
+    "/content/brightline-poc/:/",
+    "/content/brightline-poc/configuration:/.helix/config.json",
+    "/content/brightline-poc/metadata:/metadata.json"
   ],
   "includes": [
-    "/content/brightline-demo/"
+    "/content/brightline-poc/"
   ]
 }
